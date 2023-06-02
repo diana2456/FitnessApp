@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_workout">
+
+    <fragment
+        android:id="@+id/navigation_workout"
+        android:name="com.example.fitnessapp.presenter.ui.warmUp.WarmUpFragment"
+        android:label="@string/workout"
+        tools:layout="@layout/fragment_warm_up" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.fitnessapp.presenter.ui.profile.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.example.fitnessapp.presenter.ui.registration.RegistrationFragment"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" />
+    <fragment
+        android:id="@+id/amountOfExerciseFragment"
+        android:name="com.example.fitnessapp.presenter.ui.amount_of_exercise.AmountOfExerciseFragment"
+        android:label="AmountOfExerciseFragment" />
+    <fragment
+        android:id="@+id/musicFragment"
+        android:name="com.example.fitnessapp.presenter.ui.music.MusicFragment"
+        android:label="MusicFragment" />
+    <fragment
+        android:id="@+id/completeFragment"
+        android:name="com.example.fitnessapp.presenter.ui.complete.CompleteFragment"
+        android:label="CompleteFragment" />
+    <fragment
+        android:id="@+id/exercisesFragment"
+        android:name="com.example.fitnessapp.presenter.ui.exercises.ExercisesFragment"
+        android:label="ExercisesFragment" />
+    <fragment
+        android:id="@+id/restFragment"
+        android:name="com.example.fitnessapp.presenter.ui.rest.RestFragment"
+        android:label="RestFragment" />
+
+</navigation>
